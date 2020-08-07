@@ -50,6 +50,7 @@ const components = datas.map((item) => {
     <div class='when'>When? ${item.from} ~ ${item.to}</div>
     <div class='where'>Where? ${item.place} ${item.group_name}</div>
     <div class='keyword'>${keywords}</div>
+    <button class="article-button">글 확인</button>
   </article>`
 })
 
