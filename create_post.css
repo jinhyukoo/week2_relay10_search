@@ -1,44 +1,44 @@
-@import 'https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400';
+@import "https://fonts.googleapis.com/css?family=Dosis|Roboto:300,400";
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background: #ffc185;
+  background: #ffc185;
 }
 
-.container{
-	width: auto;
-	height:auto;
-	background: #fff;
-	border-radius: 5px;
-	padding: 10px;
-	margin: 10px;
-	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
-	box-sizing: border-box;
+.container {
+  width: auto;
+  height: auto;
+  background: #fff;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 10px;
+  box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
+  box-sizing: border-box;
 }
 
-.parent{
-    width: 90%;
-    margin: 10px auto;
-    display: flex;
+.parent {
+  width: 90%;
+  margin: 10px auto;
+  display: flex;
 }
 
-
-.side{
-	flex:0.5;
+.side {
+  flex: 0.5;
 }
 
-.story{
-	flex:1;
+.story {
+  flex: 1;
 }
 
-label,span {
-	font-family: 'Roboto', sans-serif;
-	text-transform: uppercase;
-	color: #87613d;
-	margin-bottom: 40px;
+label,
+span {
+  font-family: "Roboto", sans-serif;
+  text-transform: uppercase;
+  color: #87613d;
+  margin-bottom: 40px;
 }
 
 /*p > span {
@@ -49,48 +49,50 @@ label,span {
 }*/
 
 h3 {
-	font-family: 'Dosis';
-	font-size: 35px;
-	text-transform: uppercase;
-	color: #87613d;
-	margin-bottom: 30px;
+  font-family: "Dosis";
+  font-size: 35px;
+  text-transform: uppercase;
+  color: #87613d;
+  margin-bottom: 30px;
 }
 
 .gender {
-	padding-left: 25px;
-	cursor: pointer;
-	font-size: 14px;
-	margin: 10px;
-  }
-  
+  padding-left: 25px;
+  cursor: pointer;
+  font-size: 14px;
+  margin: 10px;
+}
 
 input,
 textarea,
-button{
-	outline: none !important; 
+button {
+  outline: none !important;
 }
 
-.form-btn{
-	border: none;
-	padding: 5px;;
-	border-radius:5px;
-	background-color: #ff7d00;
-	color: #fff;
+.form-btn {
+  border: none;
+  padding: 5px;
+  border-radius: 5px;
+  background-color: #ff7d00;
+  color: #fff;
 }
 
-input,textarea {
-	border: none;
-	border-bottom: 1px solid #ffc185;
-	font-family: 'Roboto';
-	color: #ff7d00;
-	text-align: center;
-	font-size: 21px;
-	font-weight:100;
-	margin-bottom:25px;
+input,
+textarea {
+  border: none;
+  border-bottom: 1px solid #ffc185;
+  font-family: "Roboto";
+  color: #ff7d00;
+  text-align: center;
+  font-size: 21px;
+  font-weight: 100;
+  margin-bottom: 25px;
 }
 
-#age{
-	display: inline-block;
-	width: 30%;
+#age {
+  display: inline-block;
+  width: 30%;
 }
-textarea{width: 85%;}
+textarea {
+  width: 85%;
+}
