@@ -13,7 +13,7 @@ body {
 	height:auto;
 	background: #fff;
 	border-radius: 5px;
-	padding: 10px;
+	padding: 30px;
 	margin: 10px;
 	box-shadow: 0 10px 50px 0 rgba(0, 0, 0, 0.25);
 	box-sizing: border-box;
@@ -30,7 +30,7 @@ body {
 	flex:0.5;
 }
 
-.story{
+.story_container{
 	flex:1;
 }
 
@@ -38,7 +38,6 @@ label,span {
 	font-family: 'Roboto', sans-serif;
 	text-transform: uppercase;
 	color: #87613d;
-	margin-bottom: 40px;
 }
 
 /*p > span {
@@ -49,6 +48,7 @@ label,span {
 }*/
 
 h3 {
+	text-align: center;
 	font-family: 'Dosis';
 	font-size: 35px;
 	text-transform: uppercase;
@@ -60,9 +60,12 @@ h3 {
 	padding-left: 25px;
 	cursor: pointer;
 	font-size: 14px;
-	margin: 10px;
-  }
-  
+	margin-right: 20px;
+}
+
+.gender-label {
+	display: block;
+}
 
 input,
 textarea,
@@ -78,12 +81,15 @@ button{
 	color: #fff;
 }
 
+.btn-div{
+	text-align: center;
+}
+
 input,textarea {
 	border: none;
 	border-bottom: 1px solid #ffc185;
 	font-family: 'Roboto';
 	color: #ff7d00;
-	text-align: center;
 	font-size: 21px;
 	font-weight:100;
 	margin-bottom:25px;
@@ -92,5 +98,12 @@ input,textarea {
 #age{
 	display: inline-block;
 	width: 30%;
+	text-align: center;
 }
-textarea{width: 85%;}
+
+
+textarea{
+	border-top: 1px solid #ffc185;
+	height: 80%;
+	width: 100%;
+}

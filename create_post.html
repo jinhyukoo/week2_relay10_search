@@ -8,7 +8,7 @@
         <!-- bootstrap -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap.min.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/css/bootstrap-theme.min.css">
-        <link rel="stylesheet" href="style.css">
+        <link rel="stylesheet" href="create_post.css">
         <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.2/js/bootstrap.min.js"></script>
 
         <title>Document</title>
@@ -44,24 +44,29 @@
                     <div class="container">
                         <h3>Who</h3>
                         <div>
-                            <label>성별</label>
-                            <input type="radio" name="gender" value="남자" id="male" class = "gender">
-                            <label for="male"> 남자</label>
-                            <input type="radio" name="gender" value="여자" id="female" class = "gender">
-                            <label for="female">여자</label>
+                            <label class="gender-label">성별</label>
+                            <input type="radio" name="gender" value="남자" id="male">
+                            <label for="male" class="gender"> 남자</label>
+                            <input type="radio" name="gender" value="여자" id="female">
+                            <label for="female" class="gender">여자</label>
                         </div>
                         <div>
                             <label for="age">나이</label>
                             <input id="age" reqired/><span>세</span>
                         </div>
-                        <label for="describe">어떤 사람인가요?</label>  
-                        <textarea id="describe"></textarea>
+                        <label for="info">어떤 사람인가요?</label>  
+                        <textarea id="info" cols="2"></textarea>
                     </div>
 
                     <div class="container">
-                        <h3>when</h3>                  
-                        <input type="date">
-                        <input type="date">
+                        <h3>when</h3>
+                        <div>            
+                            <input type="date" id="start_date"><span>~</span>
+                            <input type="date"id="end_date">
+                        </div>
+                        <div class="btn-div">
+                            <button class="form-btn">추가</button>
+                        </div>
                     </div>
 
                     <div class="container">
@@ -71,16 +76,18 @@
                             <input id = "place" reqired/>
                         </div>
                         <div>
-                            <label for="group">그룹</label>
-                            <input id="group"><reqired/>
+                            <label for="group_name">그룹</label>
+                            <input id="group_name"><reqired/>
                         </div>
                     </div>
                 </div>
 
-                <div class="container story">
+                <div class="container story_container">
                     <h3>사연</h3>                  
-                    <textarea></textarea>
-                    <input type="submit" class="form-btn" value="등록"/>
+                    <textarea id="stroy" cols="50"></textarea>
+                    <div class="btn-div">
+                        <input type="submit" class="form-btn" value="등록" />
+                    </div>
                 </div>
             </div>
 
