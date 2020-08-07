@@ -1,7 +1,7 @@
 const datas = [
   {
     no: 0,
-    gender: "M",
+    gender: "남성",
     age: 3,
     info: "이사람은 00한 사람입니다.",
     from: "19940102",
@@ -13,7 +13,7 @@ const datas = [
   },
   {
     no: 1,
-    gender: "M",
+    gender: "남성",
     age: 12,
     info: "이사람은 00한 사람입니다.",
     from: "19940102",
@@ -25,7 +25,7 @@ const datas = [
   },
   {
     no: 3, //o !(따로빼주기)왼쪽상단에 박아주고
-    gender: "M", //o 그아래 한줄
+    gender: "남성", //o 그아래 한줄
     age: 29, //o
     info: "이사람은 00한 사람입니다.", //x
     from: "19940102", //o
@@ -42,15 +42,15 @@ console.log(datas)
 const contentsDiv = document.getElementById("contents")
 
 const components = datas.map((item) => {
+  const keywords = item.keyword.split(",").map((item) => `#${item}`)
+
   return `<article class='posts'>
-    <div class='no'>${item.no}</div>
-    <div class='gender'>${item.gender}</div>
-    <div class='age'>${item.age}</div>
-    <div class='from'>${item.from}</div>
-    <div class='to'>${item.to}</div>
-    <div class='place'>${item.place}</div>
-    <div class='group_name'>${item.group_name}</div>
-    <div class='keyword'>${item.keyword}</div>
+    <div class='no'>No.${item.no}</div>
+    <div class='who'>Who? ${item.age}세 ${item.gender}</div>
+    <div class='when'>When? ${item.from} ~ ${item.to}</div>
+    <div class='where'>Where? ${item.place} ${item.group_name}</div>
+    <div class='keyword'>${keywords}</div>
+    <button class="article-button">글 확인</button>
   </article>`
 })
 
