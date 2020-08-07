@@ -1,3 +1,5 @@
+@font-face { font-family: 'GmarketSansBold'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansBold.woff') format('woff'); font-weight: normal; font-style: normal; }
+@font-face { font-family: 'GmarketSansLight'; src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2001@1.1/GmarketSansLight.woff') format('woff'); font-weight: normal; font-style: normal; }
 .main {
   padding-left: 3rem;
   padding-top: 2rem;
@@ -6,6 +8,19 @@
 
 body {
   background-color: #ffc185;
+}
+
+h2 {
+  font-family: 'GmarketSansBold';
+  text-align: center;
+}
+
+input {
+  font-family: 'GmarketSansLight';
+}
+
+article {
+  font-family: 'GmarketSansLight';
 }
 
 .has-search .form-control {
@@ -67,6 +82,7 @@ body {
 }
 
 .keyword {
+  margin-top: 20px;
   font-size: 20px;
   margin-left: 10px;
   color: orange;
